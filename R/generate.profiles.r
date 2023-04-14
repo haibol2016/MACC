@@ -1,5 +1,8 @@
 #' A function to read positions of aligned tags.
 #'
+#' @param setlist a list of vectors with names of files contains positions of aligned reads.
+#'        Each vector should correspond to one sample, and order of files should correspond
+#'        to ascending order of MNase concentrations used in the experiment.
 #' @param tags a list of signle positions representing used reads. 
 #' @param chrn a vector of chromosome names or NULL for all chromosomes.
 #' @param mc.cores a number of cores for parallel computing.
@@ -8,7 +11,7 @@
 #' @examples
 #' generate.profiles()
 
-generate.profiles <- function(tags,chrn=chrn,mc.cores=2){
+generate.profiles <- function(setlist = NULL, tags, chrn=chrn,mc.cores=2){
     fcen <- flen  <- list()
     for (nsets in names(tags)) {#nsets <- names(setlist)[1]
         sets <- setlist[[nsets]]

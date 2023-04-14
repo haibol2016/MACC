@@ -1,5 +1,8 @@
 #' A function to compute number of tags in the selected bins.
 #'
+#' @param setlist a list of vectors with names of files contains positions of aligned reads.
+#'        Each vector should correspond to one sample, and order of files should correspond
+#'        to ascending order of MNase concentrations used in the experiment.
 #' @param profs a list of signle positions representing used reads. 
 #' @param chr.stat a data.frame with sizes of analyzed chromosmes.
 #' @param chrn a vector of chromosome names or NULL for all chromosomes.
@@ -14,7 +17,10 @@
 
 
 
-count.tags.in.bins <- function(profs=NULL,chr.stat=NULL,chrn=NULL,mc.cores=2,bin=NULL, scale.genome.to.100Mb=TRUE,normalize.perBinSize=TRUE){
+count.tags.in.bins <- function(setlist = NULL, profs=NULL,
+			       chr.stat=NULL,chrn=NULL,mc.cores=2,
+			       bin=NULL, scale.genome.to.100Mb=TRUE,
+			       normalize.perBinSize=TRUE){
   if(is.null(profs)){stop("Profiles were not provided")}
   if(is.null(chr.stat)){stop("Lengths of chromosoms were not provided")}	      
   if(is.null(chrn)){stop("Chromosome names were not provided")}

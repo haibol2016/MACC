@@ -46,7 +46,7 @@ macc <- function (tags.in.bins = NULL, tit.points = NULL, gc.cont = NULL,
     }
     if (any(sapply(tags.in.bins, function(x) sapply(x$values, 
         function(y) length(unlist(y)))) != length(unlist(gc.cont)))) {
-        stop(paste("Number of bins in are different than in provided gc.cont object", 
+        stop(paste("Number of bins in tags.in.bins are different than in provided gc.cont object", 
             sep = ""))
     }
     Res <- lapply(1:length(tags.in.bins), function(ijk) {#ijk<-1

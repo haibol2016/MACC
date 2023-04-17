@@ -1,7 +1,8 @@
 #' A function to remove tag anomalies.
 #'
 #' @param tv a vector with tag coordinates from the same strand.
-#' @keywords tags 
+#' @keywords tags
+#' @importFrom stats var 
 #' @examples
 #' rta()
 

@@ -3,8 +3,6 @@
 #' @param tv a vector with tag coordinates from the same strand.
 #' @keywords tags
 #' @importFrom stats var 
-#' @examples
-#' rta()
 
 
 rta <- function(tv) {                                                                                    

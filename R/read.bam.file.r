@@ -3,7 +3,8 @@
 #' @param fname a character showing a path to files to be read. 
 #' @param mc.cores a number of cores for parallel computing.
 #' @param tl an integer for tag shifting.
-#' @importFrom Rsamtools scanBam scanBamParam scanBamFlag
+#' @importFrom Rsamtools scanBam
+#' @importClassFrom Rsamtools scanBamParam scanBamFlag
 #' @importFrom parallel mclapply
 #' @keywords bam
 #' @export

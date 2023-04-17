@@ -6,6 +6,7 @@
 #' @param nn integer indicating the number of decimal places to be used.
 #' @keywords bedGraph
 #' @export
+#' @importFrom utils write.table
 #' @examples
 #' profile2bedGraph()
 

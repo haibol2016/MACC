@@ -7,8 +7,6 @@
 #' @keywords bedGraph
 #' @export
 #' @importFrom utils write.table
-#' @examples
-#' profile2bedGraph()
 
 
 profile2bedGraph <- function(tab,path="./",fname="profile",nn=4){

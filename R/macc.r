@@ -84,7 +84,7 @@ macc <- function (tags.in.bins = NULL, tit.points = NULL, gc.cont = NULL,
         cat("slope for ", paste(names(tags.in.bins)[ijk], " was computed", 
             sep = ""), "\n")
         if (is.null(CpG)) {
-            lFit <- limma::loessFit(coefs[for.slope], unlist(gc.cont)[for.slope], 
+            lFit <- limma::loessFit(coefs[for.slope], gc.cont.v[for.slope], 
                 span = 0.15)$fitted
             m <- coefs
             m[for.slope] <- coefs[for.slope] - lFit
@@ -100,9 +100,9 @@ macc <- function (tags.in.bins = NULL, tit.points = NULL, gc.cont = NULL,
                 1)))
             in.cpg <- sort(intersect(for.slope, which(cpg == 
                 1)))
-            lFito1 <- limma::loessFit(coefs[no.in.cpg], unlist(gc.cont)[no.in.cpg], 
+            lFito1 <- limma::loessFit(coefs[no.in.cpg], gc.cont.v[no.in.cpg], 
                 span = 0.25)$fitted
-            lFito2 <- limma::loessFit(coefs[in.cpg], unlist(gc.cont)[in.cpg], 
+            lFito2 <- limma::loessFit(coefs[in.cpg], gc.cont.v[in.cpg], 
                 span = 0.25)$fitted
             m <- coefs
             m[no.in.cpg] <- coefs[no.in.cpg] - lFito1

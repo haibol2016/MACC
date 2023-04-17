@@ -3,8 +3,6 @@
 #' @param cp a vector with tag coordinates.
 #' @keywords tags
 #' @export
-#' @examples
-#' tag.lengths()
 
 tag.lengths <-  function(cp=NULL){#c <- tags[[1]]
 			if(is.null(cp)){stop("Alignment positions were not provided")

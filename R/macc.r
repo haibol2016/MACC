@@ -48,8 +48,9 @@ macc <- function (tags.in.bins = NULL, tit.points = NULL, gc.cont = NULL,
         stop(paste("Number of MNase profiles in are different than number of provided MNase concentrations", 
             sep = ""))
     }
+    gc.cont.v <- unlist(gc.cont)
     if (any(sapply(tags.in.bins, function(x) sapply(x$values, 
-        function(y) length(unlist(y)))) != length(unlist(gc.cont)))) {
+        function(y) length(unlist(y)))) != length(gc.cont.v))) {
         stop(paste("Number of bins in tags.in.bins are different than in provided gc.cont object", 
             sep = ""))
     }
@@ -94,18 +95,18 @@ macc <- function (tags.in.bins = NULL, tit.points = NULL, gc.cont = NULL,
                 2]), end = as.vector(Pos[, 3])), strand = "*")
             cpg <- as.vector(as.numeric(GenomicRanges::countOverlaps(Vgr, CpG, 
                 minoverlap = bin) != 0))
-            sum(cpg)
+            #sum(cpg)
             no.in.cpg <- sort(intersect(for.slope, which(cpg != 
                 1)))
             in.cpg <- sort(intersect(for.slope, which(cpg == 
                 1)))
-            lFito1 <- limma::loessFit(coefs[no.in.cpg], gc.cont[no.in.cpg], 
+            lFito1 <- limma::loessFit(coefs[no.in.cpg], unlist(gc.cont)[no.in.cpg], 
                 span = 0.25)$fitted
-            lFito2 <- limma::loessFit(coefs[in.cpg], gc.cont[in.cpg], 
+            lFito2 <- limma::loessFit(coefs[in.cpg], unlist(gc.cont)[in.cpg], 
                 span = 0.25)$fitted
             m <- coefs
-            m[no.in.cpg] <- coefs[no.in.cpg] - lFit1
-            m[in.cpg] <- coefs[in.cpg] - lFit2
+            m[no.in.cpg] <- coefs[no.in.cpg] - lFito1
+            m[in.cpg] <- coefs[in.cpg] - lFito2
         }
         Mat <- cbind(Mat, m); colnames(Mat)[ncol(Mat)] <- c("MACC")
         cat("MACC for ", paste(names(tags.in.bins)[ijk], " was computed", 

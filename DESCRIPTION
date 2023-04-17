@@ -8,10 +8,14 @@ Authors@R: c( person("Jakub", "Mieczkowski", email =
 Description: The package is designed to compute MACC (MNase
     accesibility) scores, a self-normalized metric helps to
     measure DNA accesibility.
+biocViews: software, workflow
 Imports:
     descr,
-    parallel
-biocViews: GenomicRanges, limma, Rsamtools
+    parallel,
+    GenomicRanges,
+    IRanges,
+    limma,
+    Rsamtools
 License: CC0
 Encoding: UTF-8
 RoxygenNote: 5.0.1

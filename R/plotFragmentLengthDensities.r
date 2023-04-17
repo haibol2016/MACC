@@ -7,8 +7,6 @@
 #' @importFrom graphics legend lines
 #' @keywords lengths
 #' @export
-#' @examples
-#' plotFragmentLengthDensities()
 
 plotFragmentLengthDensities <- function(lengths= NULL,col= c("#CDCD00", "#A0B43C", "#739B78", "#4682B4"),xlim=NULL){
    ld <- lapply(lengths,function(l) density(unlist(l),bw=15))

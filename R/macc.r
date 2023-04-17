@@ -95,9 +95,9 @@ macc <- function (tags.in.bins = NULL, tit.points = NULL, gc.cont = NULL,
                 1)))
             in.cpg <- sort(intersect(for.slope, which(cpg == 
                 1)))
-            lFito1 <- limma::loessFit(coefs[no.in.cpg], gc[no.in.cpg], 
+            lFito1 <- limma::loessFit(coefs[no.in.cpg], gc.cont[no.in.cpg], 
                 span = 0.25)$fitted
-            lFito2 <- limma::loessFit(coefs[in.cpg], gc[in.cpg], 
+            lFito2 <- limma::loessFit(coefs[in.cpg], gc.cont[in.cpg], 
                 span = 0.25)$fitted
             m <- coefs
             m[no.in.cpg] <- coefs[no.in.cpg] - lFit1

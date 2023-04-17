@@ -6,6 +6,7 @@
 #' @param tags a list of signle positions representing used reads. 
 #' @param chrn a vector of chromosome names or NULL for all chromosomes.
 #' @param mc.cores a number of cores for parallel computing.
+#' @importFrom parallel mclapply
 #' @keywords tags
 #' @export
 #' @examples

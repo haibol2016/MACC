@@ -7,8 +7,6 @@
 #' @importFrom parallel mclapply
 #' @keywords bam
 #' @export
-#' @examples
-#' read.bam.file()
 
 read.bam.file <- function(fname,mc.cores=2,tl=50) {  #require(Rsamtools) 
     bam1 <- Rsamtools::scanBam(fname, param = Rsamtools::ScanBamParam(what = c("flag", 

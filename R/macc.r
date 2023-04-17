@@ -89,7 +89,7 @@ macc <- function (tags.in.bins = NULL, tit.points = NULL, gc.cont = NULL,
             Vgr <- GenomicRanges::GRanges(seqnames = as.vector(Pos[, 
                 1]), ranges = IRanges::IRanges(start = as.vector(Pos[, 
                 2]), end = as.vector(Pos[, 3])), strand = "*")
-            cpg <- as.vector(as.numeric(countOverlaps(Vgr, CpG, 
+            cpg <- as.vector(as.numeric(GenomicRanges::countOverlaps(Vgr, CpG, 
                 minoverlap = bin) != 0))
             sum(cpg)
             no.in.cpg <- sort(intersect(for.slope, which(cpg != 

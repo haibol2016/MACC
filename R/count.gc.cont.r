@@ -7,8 +7,6 @@
 #' @keywords GC content
 #' @importFrom parallel mclapply
 #' @export
-#' @examples
-#' count.gc.cont()
 
 
 count.gc.cont <-  function(gcc=NULL,chrn=NULL,bin=300,mc.cores=2){

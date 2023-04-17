@@ -9,8 +9,7 @@
 #' @importFrom IRanges IRanges
 #' @importFrom utils data
 #' @export
-#' @examples
-#' read.genomic.data()
+
 
 read.genomic.data <-  function(genome="",chrn=NULL,bin=300,mc.cores=2){
 			avg <- c("dm3","mm9", "mm10", "hg19")

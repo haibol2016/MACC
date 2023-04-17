@@ -5,6 +5,8 @@
 #' @param bin a size of a bin.
 #' @param mc.cores a number of cores for parallel computing.
 #' @keywords genome
+#' @importFrom GenomicRanges GRanges
+#' @importFrom IRanges IRanges
 #' @export
 #' @examples
 #' read.genomic.data()

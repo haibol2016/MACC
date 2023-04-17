@@ -6,6 +6,7 @@
 #' @param mc.cores a number of cores for parallel computing.
 #' @param filter.anomalies logical. Should tags associated with anomalously high read counts be removed?
 #' @keywords tags
+#' @importFrom parallel mclapply
 #' @export
 #' @examples
 #' read.tags()

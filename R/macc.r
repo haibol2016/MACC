@@ -15,8 +15,6 @@
 #' @importFrom stats coef lm 
 #' @importFrom parallel mclapply
 #' @export
-#' @examples
-#' macc()
 
 
 macc <- function (tags.in.bins = NULL, tit.points = NULL, gc.cont = NULL, 

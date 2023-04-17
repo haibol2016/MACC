@@ -1,6 +1,7 @@
 #' A wrapper function to compute MNase accessibility (MACC) scores with one command.
 #'
-#' @param setlist a list of vectors with names of files contains positions of aligned reads. Each vector should correspond to one sample, and order of files should correspond to ascending order of MNase concentrations used in the experiment.
+#' @param setlist a list of vectors with names of files contains positions of aligned reads. Each vector should correspond to one sample,
+#'        and order of files should correspond to ascending order of MNase concentrations used in the experiment.
 #' @param path2files a path to files to be read.
 #' @param bin a size of a bin.
 #' @param tit.points a vector of MNase concentrations used in the experiment. The concentrations should be provided in ascending order.
@@ -12,8 +13,6 @@
 #' @param normalize.perBinSize logical. Should the values be normalized to been size?
 #' @keywords MACC
 #' @export
-#' @examples
-#' getMACCscores()
 
 
 getMACCscores <- function(setlist=NULL,

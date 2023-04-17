@@ -12,6 +12,7 @@
 #' @importFrom GenomicRanges countOverlaps  GRanges
 #' @importFrom IRanges IRanges
 #' @importFrom limma loessFit
+#' @importFrom stats coef lm 
 #' @importFrom parallel mclapply
 #' @export
 #' @examples

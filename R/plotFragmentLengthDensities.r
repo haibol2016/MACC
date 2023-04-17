@@ -3,12 +3,14 @@
 #' @param lengths a list of tag lengths. This may be retuned by read.tags function.
 #' @param col a vector of colors.
 #' @param xlim a numeric vector of length 2 giving range for x-axis.
+#' @importFrom stats density
+#' @importFrom graphics legend lines
 #' @keywords lengths
 #' @export
 #' @examples
 #' plotFragmentLengthDensities()
 
-plotFragmentLengthDensities <- function(lengths=ll,col= c("#CDCD00", "#A0B43C", "#739B78", "#4682B4"),xlim=NULL){
+plotFragmentLengthDensities <- function(lengths= NULL,col= c("#CDCD00", "#A0B43C", "#739B78", "#4682B4"),xlim=NULL){
    ld <- lapply(lengths,function(l) density(unlist(l),bw=15))
    ry <- range(sapply(ld,function(x) range(x$y)))
    if(is.null(xlim)) rx <- range(sapply(ld,function(x) range(x$x)))

@@ -8,8 +8,7 @@
 #' @param mc.cores a number of cores for parallel computing.
 #' @param bin a size of a bin.
 #' @param CpG a GenomeRanges object with localization of CpG island.
-#' @param scale.genome.to.100Mb logical. Should the values be normalized to genome size?
-#' @param normalize.perBinSize logical. Should the values be normalized to been size?#' @keywords MACC
+#' @keywords MACC
 #' @importFrom GenomicRanges countOverlaps  GRanges
 #' @importFrom IRanges IRanges
 #' @importFrom limma loessFit

@@ -83,8 +83,7 @@ macc <- function (tags.in.bins = NULL, tit.points = NULL, gc.cont = NULL,
                 span = 0.15)$fitted
             m <- coefs
             m[for.slope] <- coefs[for.slope] - lFit
-        }
-        else {
+        } else {
             cat("---->\t\tBeen here\t\t<---------")
             Vgr <- GenomicRanges::GRanges(seqnames = as.vector(Pos[, 
                 1]), ranges = IRanges::IRanges(start = as.vector(Pos[, 

@@ -6,6 +6,8 @@
 #' @param gc.cont a results of ount.gc.count function containing GC content in the selected bins.
 #' @keywords GC correction
 #' @export
+#' @importFrom graphics lines legend smoothScatter mtext 
+#' @importFrom stats lowess quantile 
 #' @examples
 #' plotGCvsMACC()
 

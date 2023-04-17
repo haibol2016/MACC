@@ -1,5 +1,5 @@
 Package: MACC
-Title: MNase accesibility (MACC) scores.
+Title: MNase accesibility (MACC) scores
 Version: 0.2.1
 Authors@R: c( person("Jakub", "Mieczkowski", email =
     "jmieczkowski@jmieczkowski.pl", role = c("aut",

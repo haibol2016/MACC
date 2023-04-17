@@ -14,8 +14,6 @@
 #' @importFrom parallel mclapply
 #' @keywords counts bins
 #' @export
-#' @examples
-#' count.tags.in.bins()
 
 
 

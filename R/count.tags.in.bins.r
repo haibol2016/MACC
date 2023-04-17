@@ -10,6 +10,8 @@
 #' @param bin a size of a bin.
 #' @param scale.genome.to.100Mb logical. Should the values be normalized to genome size?
 #' @param normalize.perBinSize logical. Should the values be normalized to been size?
+#' @importFrom descr freq
+#' @importFrom parallel mclapply
 #' @keywords counts bins
 #' @export
 #' @examples

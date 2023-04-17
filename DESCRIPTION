@@ -9,7 +9,7 @@ Description: The package is designed to compute MACC (MNase
     accesibility) scores, a self-normalized metric helps to
     measure DNA accesibility. Haibo Liu  @UMMS debugged and improved the
     package.
-biocViews: software, workflow
+biocViews: MNase-seq, chromatin accessibility
 Imports:
     descr,
     parallel,

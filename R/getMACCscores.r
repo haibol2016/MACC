@@ -7,7 +7,8 @@
 #' @param genome a string corresponding to genome of interest.
 #' @param chrn a vector of chromosome names or NULL for all chromosomes.
 #' @param mc.cores a number of cores for parallel computing.
-#' @param scale.genome.to.100Mb logical. Should the values be normalized to genome size?
+#' @param filter.anomalies logical. Should the regions with extremely high coverage be filtered out?
+#' @param scale.genome.to.100Mb logical Should the values be normalized to genome size?
 #' @param normalize.perBinSize logical. Should the values be normalized to been size?
 #' @keywords MACC
 #' @export

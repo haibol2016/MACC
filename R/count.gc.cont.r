@@ -5,6 +5,7 @@
 #' @param bin a size of a bin.
 #' @param mc.cores a number of cores for parallel computing.
 #' @keywords GC content
+#' @importFrom parallel mclapply
 #' @export
 #' @examples
 #' count.gc.cont()

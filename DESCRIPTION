@@ -1,13 +1,14 @@
 Package: MACC
 Title: MNase accesibility (MACC) scores.
-Version: 0.2
+Version: 0.2.1
 Authors@R: c( person("Jakub", "Mieczkowski", email =
     "jmieczkowski@jmieczkowski.pl", role = c("aut",
     "cre")), person("Michael", "Tolstorukov", email =
     "tolstorukov@molbio.mgh.harvard.edu", role = "aut"))
 Description: The package is designed to compute MACC (MNase
     accesibility) scores, a self-normalized metric helps to
-    measure DNA accesibility.
+    measure DNA accesibility. Haibo Liu  @UMMS debugged and improved the
+    package.
 biocViews: software, workflow
 Imports:
     descr,
@@ -19,4 +20,3 @@ Imports:
 License: CC0
 Encoding: UTF-8
 RoxygenNote: 5.0.1
-LazyData: true

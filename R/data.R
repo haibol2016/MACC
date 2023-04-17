@@ -13,4 +13,4 @@
 #'   \item{chr.stat}{chr, length}
 #'   \item{dCpG}{V2, V3, V4}
 #' }
-"mm10.genomic"
+"mm10.genomic.data"

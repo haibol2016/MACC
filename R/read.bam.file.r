@@ -4,7 +4,6 @@
 #' @param mc.cores a number of cores for parallel computing.
 #' @param tl an integer for tag shifting.
 #' @importFrom Rsamtools scanBam
-#' @importClassFrom Rsamtools scanBamParam scanBamFlag
 #' @importFrom parallel mclapply
 #' @keywords bam
 #' @export

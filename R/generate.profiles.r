@@ -9,8 +9,6 @@
 #' @importFrom parallel mclapply
 #' @keywords tags
 #' @export
-#' @examples
-#' generate.profiles()
 
 generate.profiles <- function(setlist = NULL, tags, chrn=chrn,mc.cores=2){
     fcen <- flen  <- list()

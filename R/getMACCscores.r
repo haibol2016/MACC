@@ -36,7 +36,7 @@ getMACCscores <- function(setlist=NULL,
 					  filter.anomalies=filter.anomalies)
 		profiles     <- generate.profiles(setlist=setlist,
 						  tags,
-						  chrn=gen.dat$chrn
+						  chrn=gen.dat$chrn,
 						  mc.cores=mc.cores)
 		tags.in.bins <- count.tags.in.bins(setlist=setlist, 
 						   profs=profiles$frag.pos, 

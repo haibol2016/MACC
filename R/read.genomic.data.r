@@ -7,6 +7,7 @@
 #' @keywords genome
 #' @importFrom GenomicRanges GRanges
 #' @importFrom IRanges IRanges
+#' @importFrom utils data
 #' @export
 #' @examples
 #' read.genomic.data()

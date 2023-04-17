@@ -27,6 +27,7 @@ getMACCscores <- function(setlist=NULL,
 			  normalize.perBinSize=TRUE) {
 		gen.dat      <- read.genomic.data(genome=genome,
 						  chrn=chrn,
+						  bin=bin, 
 						  mc.cores=mc.cores)
 		tags         <- read.tags(setlist=setlist,
 					  path2files=path2files,

@@ -42,8 +42,8 @@ read.tags <- function (setlist, path2files, chrn, mc.cores = 2, filter.anomalies
       tags <- tags[chrn]
       if (filter.anomalies) {
         tags <- parallel::mclapply(tags, function(c) {
-          inp <- MACC:::rta(tv = c[which(c > 0)])
-          inn <- MACC:::rta(tv = c[which(c < 0)])
+          inp <- rta(tv = c[which(c > 0)])
+          inn <- rta(tv = c[which(c < 0)])
           pp <- which(!inp)
           np <- which(!inn)
           p <- unique(c(c((pp * 2 - 1), pp * 2), c((np * 

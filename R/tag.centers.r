@@ -5,8 +5,6 @@
 #' @param shift  an integer corresponding to shift of location applied to tags with length longer than max.length.
 #' @keywords tags
 #' @export
-#' @examples
-#' tag.centers()
 
 tag.centers <-  function(cp=NULL,max.length=160,shift=73){#c <- tags[[1]]
 			if(is.null(cp)){stop("Alignment positions were not provided")

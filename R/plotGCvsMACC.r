@@ -8,9 +8,6 @@
 #' @export
 #' @importFrom graphics lines legend smoothScatter mtext 
 #' @importFrom stats lowess quantile 
-#' @examples
-#' plotGCvsMACC()
-
 
 plotGCvsMACC <- function(data,sname,ylim=NULL,gc.cont=gc.cont){
 	for.slope <- which(is.finite(data$MACC))

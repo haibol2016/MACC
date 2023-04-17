@@ -8,8 +8,6 @@
 #' @keywords tags
 #' @importFrom parallel mclapply
 #' @export
-#' @examples
-#' read.tags()
 
 read.tags <- function (setlist, path2files, chrn, mc.cores = 2, filter.anomalies = TRUE) 
 {
